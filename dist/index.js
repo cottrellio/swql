@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("reflect-metadata");
+const typescript_ioc_1 = require("typescript-ioc");
+const SWQL_1 = require("./SWQL");
+const app = typescript_ioc_1.Container.get(SWQL_1.default);
+app.start();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2Rjb3R0cmVsbC9Eb2N1bWVudHMvQXBwcy9zd3FsL3NyYy8iLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNEJBQTBCO0FBRTFCLG1EQUEyQztBQUUzQyxpQ0FBMEI7QUFFMUIsTUFBTSxHQUFHLEdBQVMsMEJBQVMsQ0FBQyxHQUFHLENBQUMsY0FBSSxDQUFDLENBQUM7QUFDdEMsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICdyZWZsZWN0LW1ldGFkYXRhJztcblxuaW1wb3J0IHsgQ29udGFpbmVyIH0gZnJvbSAndHlwZXNjcmlwdC1pb2MnO1xuXG5pbXBvcnQgU1dRTCBmcm9tICcuL1NXUUwnO1xuXG5jb25zdCBhcHA6IFNXUUwgPSBDb250YWluZXIuZ2V0KFNXUUwpO1xuYXBwLnN0YXJ0KCk7XG4iXX0=

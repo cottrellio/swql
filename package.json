@@ -1,0 +1,39 @@
+{
+  "name": "swql",
+  "version": "1.0.0",
+  "description": "GraphQL example of Star Wars API.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --rootDir ./src/",
+    "build:watch": "tsc -w --rootDir ./src/",
+    "start": "node ./dist/index.js",
+    "start:watch": "nodemon ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/graphql": "^0.11.4",
+    "apollo-server-koa": "^1.1.2",
+    "graphql": "^0.11.3",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "node-fetch": "^1.7.3",
+    "nodemon": "^1.12.1",
+    "reflect-metadata": "^0.1.10",
+    "save-dev": "^2.0.0",
+    "typescript": "^2.5.2",
+    "typescript-ioc": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.25",
+    "@types/koa-logger": "^2.0.2",
+    "@types/koa-router": "^7.0.23",
+    "@types/node-fetch": "^1.6.7",
+    "@types/reflect-metadata": "0.0.5"
+  }
+}

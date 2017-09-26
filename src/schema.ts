@@ -3,16 +3,11 @@ import { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, } from 'g
 
 import PersonType from './objectTypes/Person';
 import FilmType from './objectTypes/Film';
+import { getAssetByURI, } from './resolvers';
 
-const BASE_URL = 'http://swapi.co/api';
-
-async function getAssetByURI(uri: string) {
-  const res = await fetch(`${BASE_URL}${uri}`);
-  const json = await res.json();
-
-  return json;
-}
-
+/**
+ * Defines the queryable fields for each object type.
+ */
 const QueryType = new GraphQLObjectType({
   name: 'Query',
   description: '...',

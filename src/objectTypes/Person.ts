@@ -3,6 +3,9 @@ import { GraphQLObjectType, GraphQLString, GraphQLList, } from 'graphql';
 import FilmType from './Film';
 import { getIDFromURL, getAssetByURL, } from '../resolvers';
 
+/**
+ * Person object type definition.
+ */
 export default new GraphQLObjectType({
   name: 'Person',
   description: '...',

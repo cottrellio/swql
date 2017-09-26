@@ -15,6 +15,18 @@ async function getAssetByURL(url: string): Promise<GraphQLObjectType> {
 }
 
 /**
+ * Retreives the asset from URI.
+ *
+ * @param {string} uri - URI of the asset.
+ * @return {Promise<GraphQLObjectType>} - Asset
+ */
+async function getAssetByURI(uri: string) {
+  const BASE_URL = 'http://swapi.co/api';
+
+  return getAssetByURL(`${BASE_URL}${uri}`);
+}
+
+/**
  * Retreives the id of a resource from the resource's URL.
  *
  * @param {string} type - Plural form of resource type.
@@ -31,4 +43,4 @@ async function getIDFromURL(type: string, url: string): Promise<string|null> {
   return id;
 }
 
-export { getAssetByURL, getIDFromURL };
+export { getAssetByURL, getAssetByURI, getIDFromURL };
